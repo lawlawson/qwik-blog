@@ -1,7 +1,9 @@
-import { component$ } from '@builder.io/qwik';
+import { component$, useStyles$ } from '@builder.io/qwik';
+import AboutStyles from './about.css?inline';
 
 export default component$(() => {
-  console.log('hello');
+  useStyles$(AboutStyles);
+
   return (
     <article>
       <h2>About</h2>
